@@ -27,9 +27,9 @@ local function increment_counter(field, value, new)
         monitoring_counters[field][value] = counters
     end
 
-    counters.all:inc()
+    counters.all.inc()
     if new then
-        counters.new:inc()
+        counters.new.inc()
     end
 end
 
