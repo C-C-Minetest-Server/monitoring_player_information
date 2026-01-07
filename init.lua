@@ -16,7 +16,7 @@ local function increment_counter(field, value, new)
             all = monitoring.counter(
                 "player_information_" .. field,
                 "Number of player joins by " .. field,
-                { labels = { [field] = value } }
+                { labels = { [field] = value, new = "false" } }
             ),
             new = monitoring.counter(
                 "player_information_" .. field,
