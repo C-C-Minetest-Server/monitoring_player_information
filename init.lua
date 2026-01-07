@@ -2,7 +2,7 @@
 -- Sends player information to monitoring
 -- SPDX-LICENSE-IDENTIFIER: MIT
 
-core.action("[monitoring_player_information] Enabling player information logging")
+core.log("action", "[monitoring_player_information] Enabling player information logging")
 
 local monitoring_counters = {}
 
